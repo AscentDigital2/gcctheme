@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
+
+$font-stock:   'Arial, Helvetica Neue, Helvetica, sans-serif';
+$font-primary:   'Raleway', sans-serif;
+$font-secondary:   'Roboto', sans-serif; 
+
+// Colors am I right
+$primary-color: #00133D;
+// 
+$secondary-color: #57C40F;
+$accent-color: #112E63;
+// 
+$primary-dark: #212121;
+$secondary-dark: #000000;
+
+//Buttons
+$btn-primary: #0066CC;
+$btn-success: #11458E;
+
+//Text
+$text-info: #29ABE2;
+$text-primary: #11458E;
+
+//misc
+$subs-count-color: #1B59B7; 
+
+  
+$break-small: 425px;
+$break-large: 1024px;
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+ 
+
+
+
+@mixin overflow(){
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@mixin clearbg(){
+	background: none; 
+}
+ 
