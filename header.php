@@ -34,17 +34,23 @@
       </div>
     </div>
     <div class="gold-bar"></div>
+    <?php  
+      $menuLocations = get_nav_menu_locations();
+      $menuID = $menuLocations['primary'];
+      $menus = wp_get_nav_menu_items($menuID);
+      list($array1, $array2) = array_chunk($menus, ceil(count($menus) / 2));
+    ?>
     <nav class="nav-menu-gcc">
       <div class="container">
         <div class="left-menu">
-          <a href="./index.html">Home</a>
-          <a href="./tradition.html">Tradition</a>
-          <a href="./tickets.html">Tickets</a>
+          <?php foreach ($array1 as $menu): ?>
+            <a href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a>
+          <?php endforeach ?>
         </div>
         <div class="right-menu">
-          <a href="./community.html">Community</a>
-          <a href="./events.html">Events</a>
-          <a href="./contact.html">Contact</a>
+          <?php foreach ($array2 as $menu): ?>
+            <a href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a>
+          <?php endforeach ?>
         </div>
       </div>
     </nav>
@@ -64,27 +70,30 @@
   </section>
   <div class="gold-bar"></div>
     <div class="link-list">
-      <a href="./index.html">Home</a>
-      <a href="./tradition.html">Tradition</a>
-      <a href="./tickets.html">Tickets</a>
-      <a href="./community.html">Community</a>
-          <a href="./events.html">Events</a>
-          <a href="./contact.html">Contact</a>
+      <?php foreach ($menus as $menu): ?>
+        <a href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a>
+      <?php endforeach ?>
     </div>
   </div>
   <!-- Mobile Menu -->
 
-  <!-- Banner -->
+  <?php if(is_front_page()){ ?>
   <section class="banner">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <div class="item banner-item active">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/pics.jpg" style ="height:430px;" class ="cimg" alt="...">
+        <?php  
+          $banners = get_field('carousel');
+          $count = 1;
+          foreach ($banners as $banner) {
+        ?>
+        <div class="item banner-item <?php if($count == 1){ echo 'active'; } ?>">
+          <img src="<?php echo $banner['url']; ?>" style ="height:430px;" class ="cimg" alt="...">
         </div>
-        <div class="item banner-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/pics.jpg" style ="height:430px;" class ="cimg" cka alt="...">
-        </div>
+        <?php
+            $count++; 
+          } 
+        ?>
       </div>
     </div>
     <div class="gold-bar to-bottom"></div>
@@ -100,9 +109,21 @@
       <img src="<?php echo get_template_directory_uri(); ?>/img/star.png" alt="" class="star-g">
     </div>
     <div class="graphic-overlay namesholder text-g">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/southern-u401.png" alt="" class="text-g">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/alabama-u413.png" alt="" class="text-g">
+      <img src="<?php echo get_field('away')['url']; ?>" alt="" class="text-g">
+      <img src="<?php echo get_field('home')['url']; ?>" alt="" class="text-g">
     </div>
     <!--  -->
 
   </section>
+  <?php 
+    }else{
+      $thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), '', false);
+  ?>
+    <section class = "sub-banner" style="background-image: url(<?php echo $thumb_url[0]; ?>);">
+      <div class="container">
+      <h3 class = "sub-banner-title"><?php echo get_the_title(); ?></h3>
+      </div>
+    </section>
+  <?php } ?>
+
+  <div class="silver-bar to-top"></div>

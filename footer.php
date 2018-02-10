@@ -6,20 +6,30 @@
     </div>
     <div class="purple-hive">
       <div class="container">
-         <ul class="footer-links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Tradition</a></li>
-        <li><a href="#">Tickets</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Travel</a></li>
-        <li><a href="#">Contact</a></li>
+        <ul class="footer-links">
+          <?php  
+            $menuLocations = get_nav_menu_locations();
+            $menuID = $menuLocations['footer'];
+            $menus = wp_get_nav_menu_items($menuID);
+            foreach ($menus as $menu) {
+          ?>  
+            <li><a href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a></li>
+          <?php } ?>
       </ul>
       </div>
     </div>
     <div class="silver-bar"></div>
     <div class="copyright text-center">
-      <p>Gulf Cost Challenge. All Rights Reserved  © 2017</p>
-      <a href="#">Privacy Policy</a>
+      <p>Gulf Cost Challenge. All Rights Reserved  © <?php echo date('Y'); ?></p>
+      
+      <?php  
+        $menuLocations = get_nav_menu_locations();
+        $menuID = $menuLocations['bottom'];
+        $menus = wp_get_nav_menu_items($menuID);
+        foreach ($menus as $menu) {
+      ?>  
+        <a href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a>
+      <?php } ?>
     </div>
   </footer>
   <?php wp_footer(); ?>

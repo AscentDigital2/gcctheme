@@ -13,11 +13,30 @@
 		//Navigation Menus
 		register_nav_menus(array(
 			'primary' => __('Primary Menu'),
-			'footer' => __('Footer Menu')
+			'footer' => __('Footer Menu'),
+			'bottom' => __('Bottom Menu')
 		));
 			//Add featured image support
 		add_theme_support('post-thumbnails');
 		add_theme_support('post-formats', array('aside', 'gallery', 'link'));
 	}
 	add_action('after_setup_theme', 'setup');
+
+	add_action( 'init', 'sponsor_cpt' );
+
+	function sponsor_cpt() {
+
+		register_post_type( 'sponsors', array(
+		  'labels' => array(
+		    'name' => 'Sponsors',
+		    'singular_name' => 'Sponsor',
+		   ),
+		  'description' => 'Partners',
+		  'public' => true,
+		  'publicly_queryable' => true,
+		  'menu_position' => 20,
+		  'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
+		  'taxonomies' => array('category')
+		));
+	}
 ?>
