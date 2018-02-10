@@ -39,4 +39,21 @@
 		  'taxonomies' => array('category')
 		));
 	}
+	add_action( 'init', 'event_cpt' );
+
+	function event_cpt() {
+
+		register_post_type( 'events', array(
+		  'labels' => array(
+		    'name' => 'Events',
+		    'singular_name' => 'Event',
+		   ),
+		  'description' => 'Events',
+		  'public' => true,
+		  'publicly_queryable' => true,
+		  'menu_position' => 20,
+		  'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
+		  'taxonomies' => array('category')
+		));
+	}
 ?>
