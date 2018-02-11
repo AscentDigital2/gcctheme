@@ -57,6 +57,23 @@
 		  'taxonomies' => array('category')
 		));
 	}
+	add_action( 'init', 'advisory_cpt' );
+
+	function advisory_cpt() {
+
+		register_post_type( 'advisory', array(
+		  'labels' => array(
+		    'name' => 'Advisory',
+		    'singular_name' => 'Advisory',
+		   ),
+		  'description' => 'Advisory',
+		  'public' => true,
+		  'publicly_queryable' => true,
+		  'menu_position' => 20,
+		  'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
+		  'taxonomies' => array('category')
+		));
+	}
 	add_action( 'init', 'hotel_cpt' );
 
 	function hotel_cpt() {
