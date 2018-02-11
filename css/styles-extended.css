@@ -444,33 +444,9 @@ color: #FFF;
     margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
-  .sponsor-box img{
-    margin-left:25%;
-    margin-right:25%;
-  }
-}
-@media (max-width: 992px) {
-  .sponsor-box img{
-    margin-left:25%;
-    margin-right:25%;
-  }
-}
 .social-box{
     padding-left: 50px;
     padding-right: 50px;
-}
-@media (max-width: 768px) {
-  .social-box{
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-}
-@media (max-width: 992px) {
-  .social-box{
-    padding-left: 120px;
-    padding-right: 120px;
-  }
 }
 .community-section{
     background-color: #000;
