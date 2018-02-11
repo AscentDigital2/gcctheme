@@ -39,6 +39,17 @@
 				</tr>
 			</tbody>
 		</table>
+		<h1>Tickets</h1>
+		<table class="form-table">
+			<tbody>
+				<tr class="form-field form-required">
+					<th scope="row"><label for="ticket">Ticket URL </label></th>
+					<td>
+						<input name="ticket" type="text" id="ticket" value="<?php echo get_option('gcctheme_ticket', ''); ?>" aria-required="true" autocapitalize="none" autocorrect="off">
+					</td>
+				</tr>
+			</tbody>
+		</table>
 		<input type="submit" value="Update" name="submit" class="button button-primary">
 	</form>
 </div>

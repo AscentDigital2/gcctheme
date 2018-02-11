@@ -23,7 +23,7 @@
   <section class="get-tickets">
      <div class="backdrop text-center">
        <p>GET YOUR TICKETS NOW</p>
-       <a href="<?php the_field('tickets_url') ?>"><span class="click-here">Click Here</span></a>
+       <a href="<?php echo get_option('gcctheme_ticket', ''); ?>"><span class="click-here">Click Here</span></a>
      </div>
   </section>
 
