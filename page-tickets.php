@@ -69,16 +69,19 @@
 	    	$counter = 1;
 	    	while($query->have_posts()){
 	    		$query->the_post();
-	?>
-
-    <!-- Gold bar with ball -->
-    <div class="gold-bar to-top">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/ball-u437.png" alt="" class="small-logo">
-    </div>
-        <h2 class = "map-h2 text-center"><?php the_title(); ?></h2>
-        <h2 class = "map-h3 text-center"><?php echo get_the_content(); ?></h2>
-        <h2 class = "map-h3 text-center"><?php the_field('pricing'); ?></h2>
-        <p class="tailgate-p"><?php the_field('notes'); ?></p>
+	 ?>
+        <!-- Gold bar with ball -->
+        <div class="gold-bar to-top">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/ball-u437.png" alt="" class="small-logo">
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center box-pad">
+            <h2 class = "map-h2 text-center"><?php the_title(); ?></h2>
+            <h2 class = "map-h3 text-center"><?php echo get_the_content(); ?></h2>
+            <h2 class = "map-h3 text-center"><?php the_field('pricing'); ?></h2>
+            <p class="tailgate-p"><?php the_field('notes'); ?></p>
+          </div>
+        </div>
         <?php 
     			$location = get_field('location');
     			if( !empty($location) ):
