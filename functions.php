@@ -60,7 +60,7 @@
 
 	function hotel_cpt() {
 
-		register_post_type( 'Hotels', array(
+		register_post_type( 'hotels', array(
 		  'labels' => array(
 		    'name' => 'Hotels',
 		    'singular_name' => 'Hotel',
@@ -73,4 +73,30 @@
 		  'taxonomies' => array('category')
 		));
 	}
+
+	add_action('admin_menu', 'theme_contact_setup_menu');
+
+	function theme_contact_setup_menu(){
+	    add_menu_page( 'Theme Options', 'Theme Options', 'manage_options', 'theme-option', 'init_theme_options' );
+	}
+
+	function init_theme_options(){
+		include get_template_directory() . '/includes/theme-options.php';
+	}
+
+	function update_theme_options(){
+		$facebook = $_POST['facebook'];
+		$twitter = $_POST['twitter'];
+		$instagram = $_POST['instagram'];
+		$youtube = $_POST['youtube'];
+		update_option('gcctheme_facebook', $facebook);
+		update_option('gcctheme_twitter', $twitter);
+		update_option('gcctheme_instagram', $instagram);
+		update_option('gcctheme_youtube', $youtube);
+		wp_redirect(admin_url('admin.php?page=theme-option&success'));
+		exit;
+	}
+
+	add_action( 'admin_post_nopriv_gcctheme_update_theme_options', 'update_theme_options' );
+	add_action( 'admin_post_gcctheme_update_theme_options', 'update_theme_options' );
 ?>

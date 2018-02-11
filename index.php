@@ -123,7 +123,7 @@
  <!-- Divider 2 -->
   <section class="black-metal-brushed divider-2">
     <h4 class ="vc-text">VISIT OUR YOUTUBE CHANNEL TO WATCH MORE OF OUR VIDEOS&nbsp;</h4><Br><br>
-    <span class="ch-text">Click Here</span>
+    <a href="<?php echo get_option('gcctheme_youtube', ''); ?>"><span class="ch-text">Click Here</span></a>
   </section>
   <div class="gold-bar"></div>
 <?php get_footer(); ?>
