@@ -56,4 +56,21 @@
 		  'taxonomies' => array('category')
 		));
 	}
+	add_action( 'init', 'hotel_cpt' );
+
+	function hotel_cpt() {
+
+		register_post_type( 'Hotels', array(
+		  'labels' => array(
+		    'name' => 'Hotels',
+		    'singular_name' => 'Hotel',
+		   ),
+		  'description' => 'Hotels',
+		  'public' => true,
+		  'publicly_queryable' => true,
+		  'menu_position' => 20,
+		  'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
+		  'taxonomies' => array('category')
+		));
+	}
 ?>
