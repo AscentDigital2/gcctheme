@@ -200,6 +200,9 @@ nav.nav-menu-gcc {
     @media (max-width: 768px) {
       nav.nav-menu-gcc .container {
         display: none; } }
+    @media (max-width: 992px) {
+      nav.nav-menu-gcc .container {
+        display: none; } }
 
 section.banner {
   width: 100%;

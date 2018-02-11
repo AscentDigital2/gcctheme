@@ -51,7 +51,7 @@
 	        		$query->the_post();
 	        		$thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), '', false);
 	    ?>
-        <div class="col-md-2 col-xs-6 sponsor-box"><a href="<?php the_field('url'); ?>"><img src="<?php echo $thumb_url[0]; ?>" alt=""></a></div>
+        <div class="col-md-2 col-xs-6 col-sm-4 sponsor-box"><a href="<?php the_field('url'); ?>"><img src="<?php echo $thumb_url[0]; ?>" alt=""></a></div>
         <?php
         		}
         	}
@@ -105,17 +105,9 @@
   <!-- Videos-challenge -->
   <section class="video-challenge">
      <div class="backdrop text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-4">
-           <div class="panel panel-default panel-video">
-              <div class="panel-body">
+        <div class="video-box">
                 <iframe class="actAsDiv" style="width:100%;height:100%;" src="<?php the_field('challenge_of_the_day'); ?>" frameborder="0" allowfullscreen=""></iframe>
-              </div>
-           </div>
-          </div>
-        </div>
-      </div>
+        </div>      
      </div>
   </section>
 
