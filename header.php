@@ -109,8 +109,8 @@
       <img src="<?php echo get_template_directory_uri(); ?>/img/star.png" alt="" class="star-g">
     </div>
     <div class="graphic-overlay namesholder text-g">
-      <img src="<?php echo get_field('away')['url']; ?>" alt="" class="text-g">
       <img src="<?php echo get_field('home')['url']; ?>" alt="" class="text-g">
+      <img src="<?php echo get_field('away')['url']; ?>" alt="" class="text-g">
     </div>
     <!--  -->
 

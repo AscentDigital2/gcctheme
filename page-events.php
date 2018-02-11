@@ -5,6 +5,8 @@
   	<?php  
 	        $args = array(
 	            'post_type' => 'events',
+		        'paged' => $paged,
+		        'posts_per_page' => 6,
 	            'order' => 'DESC',
 	            'orderby' => 'post_date'
 	        );
@@ -43,7 +45,7 @@
             </div>
             <div class="col-md-6 box-pad-events" style ="color:#FFF;">
               <h3 class="m-h3">Time <?php echo get_field('time'); ?></h3>
-              <p class="m-p"><?php echo get_field('date'); ?></p>
+              <p class="m-p"><?php echo date('F jS', strtotime(get_field('date'))); ?></p>
               <p class="place-p"><?php echo get_field('place'); ?></p>
               <?php the_content(); ?>
               <a href = "<?php echo get_field('link'); ?>" class ="btn btn-default btn-gold">Event Link</a>

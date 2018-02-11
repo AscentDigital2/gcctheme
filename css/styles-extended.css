@@ -176,6 +176,9 @@
     margin-top:-78px;
     z-index: 1001;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
 }
 @media (max-width: 768px) {
 	.m-img{	
