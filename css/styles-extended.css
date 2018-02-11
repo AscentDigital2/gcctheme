@@ -534,7 +534,7 @@ color: #FFF;
     height: 150px;
   }
 }
-.advisor-box .a-name{
+.a-name{
     color: #FFFFFF;
     text-align: center;
     font-family: raleway, sans-serif;
@@ -542,7 +542,7 @@ color: #FFF;
     margin-bottom: 0px;
     margin-top: 5px;
 }
-.advisor-box .a-title{
+.a-title{
     color: #DFC775;
     text-align: center;
     font-family: raleway, sans-serif;

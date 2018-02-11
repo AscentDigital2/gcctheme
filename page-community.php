@@ -31,7 +31,7 @@
                         $query->the_post();
                         $thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), '', false);
             ?>
-            <div class="col-md-3 col-xs-4 advisor-box"> <img src="<?php echo $thumb_url[0]; ?>" class ="advisor-img"> <p class="a-name"><?php the_title(); ?></p><p class="a-title"><?php get_field('position'); ?></p></div>
+            <div class="col-md-3 col-xs-4 advisor-box"> <img src="<?php echo $thumb_url[0]; ?>" class ="advisor-img"> <p class="a-name"><?php the_title(); ?></p><p class="a-title"><?php echo get_field('position'); ?></p></div>
           <?php
                   }
                 }
