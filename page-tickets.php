@@ -58,7 +58,6 @@
 
 
     <h1 class="tickets-title">Tailgating</h1>
-
     <?php  
 	    $args = array(
 	        'post_type' => 'tailgates',
@@ -76,23 +75,29 @@
     <div class="gold-bar to-top">
       <img src="<?php echo get_template_directory_uri(); ?>/img/ball-u437.png" alt="" class="small-logo">
     </div>
-
-    <div class="container">
         <h2 class = "map-h2 text-center"><?php the_title(); ?></h2>
         <h2 class = "map-h3 text-center"><?php echo get_the_content(); ?></h2>
         <h2 class = "map-h3 text-center"><?php the_field('pricing'); ?></h2>
         <p class="tailgate-p"><?php the_field('notes'); ?></p>
         <?php 
-			$location = get_field('location');
-			if( !empty($location) ):
-		?>
+    			$location = get_field('location');
+    			if( !empty($location) ):
+    		?>
+        <!-- Gold bar with ball -->
+        <div class="gold-bar to-top">
+          <img src="./img/ball-u437.png" alt="" class="small-logo">
+        </div>
+        <div class="container">
+        <h2 class = "map-h2 text-center">Ladd-Peebles Stadium</h2>
+        <h2 class = "map-h3 text-center">1621 Virginia St,</h2>
+        <h2 class = "map-h3 text-center">Mobile, AL 36604</h2>
 	      <div class="row">
 	        <div class="col-md-10 col-md-offset-1 map-box acf-map">
 	          <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
 	        </div>
 	      </div>
+        </div>
 	    <?php endif; ?>
-    </div>
     <?php
     		}
     	}
