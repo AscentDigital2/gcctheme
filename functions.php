@@ -5,8 +5,6 @@
 		wp_enqueue_style('main', get_template_directory_uri() . '/css/styles.css');
 		wp_enqueue_style('extended', get_template_directory_uri() . '/css/styles-extended.css');
 		wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '1.0.0', true );
-		wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAed5etpja9gt01RlsM6-R6PRjjFCjFqHQ', array(), '3', true );
-  		wp_enqueue_script( 'google', get_template_directory_uri() . '/js/acf-google-maps.js', array('google-map', 'jquery'), '0.1', true );
 	}
 
 	add_action('wp_enqueue_scripts', 'resources');

@@ -82,10 +82,11 @@
             <p class="tailgate-p"><?php the_field('notes'); ?></p>
           </div>
         </div>
-        <?php 
-    			$location = get_field('location');
-    			if( !empty($location) ):
-    		?>
+        <?php
+            }
+          }
+          wp_reset_query();
+        ?>
         <!-- Gold bar with ball -->
         <div class="gold-bar to-top">
           <img src="./img/ball-u437.png" alt="" class="small-logo">
@@ -95,16 +96,10 @@
         <h2 class = "map-h3 text-center">1621 Virginia St,</h2>
         <h2 class = "map-h3 text-center">Mobile, AL 36604</h2>
 	      <div class="row">
-	        <div class="col-md-10 col-md-offset-1 map-box acf-map">
-	          <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+	        <div class="col-md-10 col-md-offset-1 map-box">
+	          <iframe class="actAsDiv" style="width:100%;height:100%;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;q=Ladd-Peebles%20Stadium%201621%20Virginia%20St%2C%20Mobile%2C%20AL%2036604&amp;aq=0&amp;ie=UTF8&amp;t=m&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe>
 	        </div>
 	      </div>
         </div>
-	    <?php endif; ?>
-    <?php
-    		}
-    	}
-    	wp_reset_query();
-    ?>
   </section>
 <?php get_footer(); ?>
