@@ -502,6 +502,14 @@ color: #FFF;
         right:0;
     }   
 }
+@media (max-width: 992px) {
+    .community-section .lg-img{
+        height: auto;
+    }
+    .community-section .m-img{
+        right:0;
+    }   
+}
 .advisor-box{
     padding-left: 80px;
     padding-right: 70px;
