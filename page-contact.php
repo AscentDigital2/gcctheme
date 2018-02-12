@@ -30,9 +30,9 @@
 		    	Your inquiry has been successfully sent.
 		    </div>
 		    <?php } ?>
-           <input type = "text" class = "form-control contact-input" placeholder= "Enter Name">
-           <input type = "text" class = "form-control contact-input" placeholder= "Enter Email">
-           <textarea class = "form-control contact-textarea" placeholder= "Enter Your Message"></textarea>
+           <input type = "text" class = "form-control contact-input" placeholder= "Enter Name" name="name">
+           <input type = "text" class = "form-control contact-input" placeholder= "Enter Email" name="email">
+           <textarea class = "form-control contact-textarea" placeholder= "Enter Your Message" name="message"></textarea>
          </div>
          <div class="col-md-4 col-md-offset-4">
               <button class ="btn btn-default btn-submit btn-block">Submit </button>
