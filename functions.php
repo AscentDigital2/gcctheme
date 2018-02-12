@@ -108,11 +108,17 @@
 		$instagram = $_POST['instagram'];
 		$youtube = $_POST['youtube'];
 		$ticket = $_POST['ticket'];
+		$email = $_POST['email'];
+		$contact = $_POST['contact'];
+		$recipients = $_POST['recipients'];
 		update_option('gcctheme_facebook', $facebook);
 		update_option('gcctheme_twitter', $twitter);
 		update_option('gcctheme_instagram', $instagram);
 		update_option('gcctheme_youtube', $youtube);
 		update_option('gcctheme_ticket', $ticket);
+		update_option('gcctheme_email', $email);
+		update_option('gcctheme_contact', $contact);
+		update_option('gcctheme_recipients', $recipients);
 		wp_redirect(admin_url('admin.php?page=theme-option&success'));
 		exit;
 	}
@@ -144,4 +150,26 @@
 	}
 
 	add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+	function send_contact_form(){
+		$pageid = $_POST['pageid'];
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
+
+		$body = 'Full Name: ' . $name . "\r\n";
+		$body .= 'Email Address: ' . $email . "\r\n";
+		$body .= 'Message: ' . $message;
+
+		$success = 'false';
+		if(wp_mail(get_option('gcctheme_recipients', ''), 'Contact Form GCC', $body)){
+			$success = 'true';
+		}
+
+		wp_redirect(get_the_permalink($pageid) . '?sent=' . $success);
+		exit;
+	}
+
+	add_action( 'admin_post_nopriv_gcctheme_contact_form', 'send_contact_form' );
+	add_action( 'admin_post_gcctheme_contact_form', 'send_contact_form' );
 ?>

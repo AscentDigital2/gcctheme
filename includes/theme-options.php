@@ -50,6 +50,30 @@
 				</tr>
 			</tbody>
 		</table>
+		<h1>Contact Information</h1>
+		<table class="form-table">
+			<tbody>
+				<tr class="form-field form-required">
+					<th scope="row"><label for="ticket">Email Address </label></th>
+					<td>
+						<input name="email" type="text" id="email" value="<?php echo get_option('gcctheme_email', ''); ?>" aria-required="true" autocapitalize="none" autocorrect="off">
+					</td>
+				</tr>
+				<tr class="form-field form-required">
+					<th scope="row"><label for="ticket">Contact Number </label></th>
+					<td>
+						<input name="contact" type="text" id="contact" value="<?php echo get_option('gcctheme_contact', ''); ?>" aria-required="true" autocapitalize="none" autocorrect="off">
+					</td>
+				</tr>
+				<tr class="form-field form-required">
+					<th scope="row"><label for="recipient-email">Recipient <span class="description">(required)</span></label></th>
+					<td>
+						<input name="recipients" type="text" id="recipient-email" value="<?php echo get_option('gcctheme_recipients', ''); ?>" aria-required="true" autocapitalize="none" autocorrect="off"><br>
+						<p class="description">Please enter comma separated values for multiple emails <i>(e.g. john@sample.com, doe@sample.com)</i></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 		<input type="submit" value="Update" name="submit" class="button button-primary">
 	</form>
 </div>
