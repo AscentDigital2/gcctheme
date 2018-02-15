@@ -39,7 +39,7 @@
       <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class = "m-img" style="background-image: url(<?php echo $thumb_url[0]; ?>);margin-top:-58px;">
+              <div class = "m-img" style="background-image: url(<?php echo $thumb_url[0]; ?>);">
               </div>
             </div>
             <div class="col-md-6 box-pad-travel">
