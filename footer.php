@@ -54,6 +54,5 @@
       $('.carousel').carousel();
     })( jQuery );
   </script>
-</div>
 </body>
 </html>
