@@ -39,8 +39,7 @@
       <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class = "m-img" style="background-image: url(<?php echo $thumb_url[0]; ?>);">
-              </div>
+              <img class = "m-img" src ="<?php echo $thumb_url[0]; ?>">
             </div>
             <div class="col-md-6 box-pad-travel">
               <h3 class="gold-name" style = "font-size:16px;"><?php echo get_field('university'); ?></h3>

@@ -166,7 +166,7 @@
     background-color: #7F7F7F;
     width:95%;
     height:310px;
-    margin-top:-78px;
+    margin-top:-58px;
     z-index: 1001;
     position: relative;
 }
@@ -903,7 +903,6 @@ nav.nav-menu-gcc {
    font-size: 58px;
 }
 
- 
     @media (max-width: 992px) {
         section.banner .graphic-overlay.text-g img {
           margin-bottom: 20px;
@@ -1007,12 +1006,12 @@ nav.nav-menu-gcc {
       align-content: center;
 }
 
-
 @media (max-width: 768px) {
     .video-box{
         width: 100%;
     }
 }
+
     @media (max-width: 992px) {
       footer .purple-hive ul.footer-links {
         margin-top: 80px;
@@ -1028,22 +1027,30 @@ nav.nav-menu-gcc {
 
     @media (max-width: 992px) {
       .events-section .m-img{
-        margin-top: 0px;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
       }
     }
     @media (max-width: 768px) {
       .events-section .m-img{
-        margin-top: 0px;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
       }
     }
     @media (max-width: 992px) {
       .travel-section .m-img{
-        margin-top: 0px;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
       }
     }
     @media (max-width: 768px) {
       .travel-section .m-img{
-        margin-top: 0px;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
       }
     }
     .fw{
