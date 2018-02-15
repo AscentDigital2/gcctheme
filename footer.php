@@ -1,3 +1,4 @@
+
 <footer>
     <div class="silver-bar"></div>
     <div class="metal-hive"></div>
@@ -53,5 +54,6 @@
       $('.carousel').carousel();
     })( jQuery );
   </script>
+</div>
 </body>
 </html>
