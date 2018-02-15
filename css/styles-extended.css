@@ -1032,6 +1032,11 @@ nav.nav-menu-gcc {
 }
 
 
+@media (max-width: 768px) {
+    .video-box{
+        width: 100%;
+    }
+}
     @media (max-width: 992px) {
       footer .purple-hive ul.footer-links {
         margin-top: 80px;
