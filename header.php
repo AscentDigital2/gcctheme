@@ -7,7 +7,7 @@
   <title><?php echo bloginfo('name'); ?></title>
   <meta name="description" content="Gulf Coast Challenge">
   <meta name="author" content="DB">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php wp_head(); ?>
 
   <!--[if lt IE 9]>
