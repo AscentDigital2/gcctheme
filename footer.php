@@ -21,7 +21,7 @@
     </div>
     <div class="silver-bar"></div>
     <div class="copyright text-center">
-      <p>Gulf Cost Challenge. All Rights Reserved  © <?php echo date('Y'); ?></p>
+      <p>Gulf Coast Challenge. All Rights Reserved  © <?php echo date('Y'); ?></p>
       
       <?php  
         $menuLocations = get_nav_menu_locations();
