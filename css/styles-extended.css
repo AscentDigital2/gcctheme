@@ -1063,3 +1063,15 @@ nav.nav-menu-gcc {
         font-size: 20px !important;
       }
     }
+
+    nav.nav-menu-gcc .container a{
+      font-size: 12px !important;
+    }
+
+    nav.nav-menu-gcc .container .left-menu{
+      margin-left: -50px !important;
+    }
+
+    nav.nav-menu-gcc .container .right-menu{
+      margin-left: 400px !important;
+    }
