@@ -865,7 +865,7 @@ nav.nav-menu-gcc {
 }
 
 .menu-container {
-  z-index: 1003;
+  z-index: 1003 !important;
 }
 .menu-button{
   display: none;
@@ -880,9 +880,9 @@ nav.nav-menu-gcc {
     display: block;
     }
 }
-@media (max-width: 525px) {
+@media (max-width: 768px) {
   .menu-container {
-    width:280px;
+    width:300px !important;
   }
   
 }
