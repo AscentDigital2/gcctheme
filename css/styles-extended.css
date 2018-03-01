@@ -1080,7 +1080,7 @@ nav.nav-menu-gcc {
     .sponsor-img{
       background-color: #FFF;
     }
-    @media (min-width: 992px){
+    @media (min-width: 768px){
       .purple-hive .container {
         width: 100%;
       }
