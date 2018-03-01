@@ -4,7 +4,7 @@
 <section class="even-pad z-4 news-section">
       <div class="container  ">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 page-box">
             <?php 
               $big = 999999999; // need an unlikely integer
                echo paginate_links( array(
