@@ -966,7 +966,9 @@ nav.nav-menu-gcc {
 }
 
 .panel-social .panel-body{
-    height: 250px;
+    height: 350px;
+    padding: 15px;
+    
 }
 
 @media (max-width: 525px) {
