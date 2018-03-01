@@ -380,3 +380,17 @@ nav.nav-menu-gcc {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+.page-numbers {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #4E5C70;
+    color: #FFF;
+    font-size: 1.2em;
+    border: 0px solid #ddd;
+    border-radius: 1px;
+    font-family: "Roboto", sans-serif;
+}
+.current, .page-numbers:hover {
+    color: #FFF;
+    background-color: #161a20;
+}
