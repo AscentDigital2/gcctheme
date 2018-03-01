@@ -65,7 +65,7 @@
   
 <!-- Newsletter -->
   <section class="purple-hive newsletter">
-      <div class="container" style = "width:100%">
+      <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h1 class="opaque">GET SOCIAL </h1>

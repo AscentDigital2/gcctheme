@@ -16,9 +16,6 @@ html,body
     width: 100%;
     overflow-x: hidden; 
 }
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px; } }
 header {
   position: relative;
   width: 100%;
