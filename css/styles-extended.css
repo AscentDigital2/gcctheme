@@ -1081,7 +1081,7 @@ nav.nav-menu-gcc {
       background-color: #FFF;
     }
     @media (min-width: 768px){
-      .purple-hive .container {
+      .social-container {
         width: 100%;
       }
     }
