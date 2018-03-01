@@ -4,6 +4,7 @@
 		wp_enqueue_style('style-name', get_stylesheet_uri());
 		wp_enqueue_style('main', get_template_directory_uri() . '/css/styles.css');
 		wp_enqueue_style('extended', get_template_directory_uri() . '/css/styles-extended.css');
+		wp_enqueue_style('extended2', get_template_directory_uri() . '/css/styles-extended-2.css');
 		wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '1.0.0', true );
 	}
 

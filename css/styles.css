@@ -11,6 +11,11 @@ Text Domain:
 */
 /*****************************/
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900");
+html,body
+{
+    width: 100%;
+    overflow-x: hidden; 
+}
 @media (min-width: 1200px) {
   .container {
     width: 1200px; } }
@@ -465,7 +470,7 @@ h1.opaque {
   margin-bottom: 0px; }
   @media (max-width: 768px) {
     h1.opaque {
-      font-size: 70px;
+      font-size: 65px;
       line-height: 76px; } }
 
 .black-striped {

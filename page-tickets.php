@@ -1,15 +1,32 @@
 <?php get_header(); ?>
-<section class="black-metal-brushed divider-2">
-    <div class="container">
-        <div class="ticket-menu centered-nav">
-        	<?php  
-		      $menuLocations = get_nav_menu_locations();
-		      $menuID = $menuLocations['tickets'];
-		      $menus = wp_get_nav_menu_items($menuID);
-		      foreach ($menus as $menu) {
-		    ?>
-          		<a href="<?php echo $menu->url; ?>"><?php echo $menu->title; ?></a>
-          	<?php } ?>
+  <section class="black-metal-brushed divider-2 ticket-submenu__section">
+    <div class="centered-nav mobile-ticket visible-xs">
+      <a href="javascript:void(0);"  class="submenu-handler" data-toggle="collapse" data-target="#ticket-submenu__collapse">More Tickets</a> 
+    </div>
+    <!-- Mobile -->
+    <div class="container collapse hidden-lg hidden-md hidden-sm" id="ticket-submenu__collapse" >
+        <div class="ticket-submenu centered-nav">
+          <?php  
+          $menuLocations = get_nav_menu_locations();
+          $menuID = $menuLocations['tickets'];
+          $menus = wp_get_nav_menu_items($menuID);
+          foreach ($menus as $menu) {
+        ?>
+              <a href="<?php echo $menu->url; ?>"><?php echo $menu->title; ?></a>
+            <?php } ?>
+        </div>
+    </div>
+    <!-- /mobile -->
+    <div class="container hidden-xs">
+        <div class="ticket-submenu centered-nav">
+          <?php  
+          $menuLocations = get_nav_menu_locations();
+          $menuID = $menuLocations['tickets'];
+          $menus = wp_get_nav_menu_items($menuID);
+          foreach ($menus as $menu) {
+        ?>
+              <a href="<?php echo $menu->url; ?>"><?php echo $menu->title; ?></a>
+            <?php } ?>
         </div>
     </div>
   </section>

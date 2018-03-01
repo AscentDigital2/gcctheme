@@ -7,7 +7,7 @@
   <title><?php echo bloginfo('name'); ?></title>
   <meta name="description" content="Gulf Coast Challenge">
   <meta name="author" content="DB">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php wp_head(); ?>
 
   <!--[if lt IE 9]>
@@ -24,9 +24,9 @@
     <div class="nav-top-most">
       <div class="container">
         <div class="left-top-menu social-icons">
-          <a href="<?php echo get_option('gcctheme_facebook', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons1.png" alt=""></a>
-          <a href="<?php echo get_option('gcctheme_twitter', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons2.png" alt=""></a>
-          <a href="<?php echo get_option('gcctheme_instagram', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons3.png" alt=""></a>
+          <a href="<?php echo get_option('gcctheme_facebook', ''); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons1.png" alt=""></a>
+          <a href="<?php echo get_option('gcctheme_twitter', ''); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons2.png" alt=""></a>
+          <a href="<?php echo get_option('gcctheme_instagram', ''); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons3.png" alt=""></a>
         </div>
         <div class="right-top-menu">
           <a href="javascript:void(0)" class ="menu-button">MENU</a>
