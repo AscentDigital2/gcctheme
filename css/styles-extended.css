@@ -1080,3 +1080,14 @@ nav.nav-menu-gcc {
     .sponsor-img{
       background-color: #FFF;
     }
+      .social-container {
+          width: 100%;
+      }
+    @media (min-width: 992px){
+      .social-container {
+          padding-left: 70px;
+          padding-right: 70px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+    }
