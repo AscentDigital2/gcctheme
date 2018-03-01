@@ -24,9 +24,9 @@
     <div class="nav-top-most">
       <div class="container">
         <div class="left-top-menu social-icons">
-          <a href="<?php echo get_option('gcctheme_facebook', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons1.png" alt=""></a>
-          <a href="<?php echo get_option('gcctheme_twitter', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons2.png" alt=""></a>
-          <a href="<?php echo get_option('gcctheme_instagram', ''); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons3.png" alt=""></a>
+          <a href="<?php echo get_option('gcctheme_facebook', ''); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons1.png" alt=""></a>
+          <a href="<?php echo get_option('gcctheme_twitter', ''); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons2.png" alt=""></a>
+          <a href="<?php echo get_option('gcctheme_instagram', ''); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons3.png" alt=""></a>
         </div>
         <div class="right-top-menu">
           <a href="javascript:void(0)" class ="menu-button">MENU</a>
