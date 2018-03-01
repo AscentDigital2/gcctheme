@@ -5,7 +5,7 @@
 	        $args = array(
 	            'post_type' => 'hotels',
 		        'paged' => $paged,
-		        'posts_per_page' => 12,
+		        'posts_per_page' => 6,
 	            'order' => 'DESC',
 	            'orderby' => 'post_date'
 	        );
