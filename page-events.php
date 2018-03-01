@@ -6,7 +6,7 @@
 	        $args = array(
 	            'post_type' => 'events',
 		        'paged' => $paged,
-		        'posts_per_page' => 6,
+		        'posts_per_page' => 12,
 	            'order' => 'DESC',
 	            'orderby' => 'post_date'
 	        );
@@ -59,6 +59,8 @@
         	}
         	wp_reset_query();
     ?>
+
+    <?php get_template_part('pagination'); ?>
   </section>
   <!-- End Tradition section -->
 <?php get_footer(); ?>
