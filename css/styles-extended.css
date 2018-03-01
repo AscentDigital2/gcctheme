@@ -1080,18 +1080,3 @@ nav.nav-menu-gcc {
     .sponsor-img{
       background-color: #FFF;
     }
-    @media (min-width: 768px){
-      .purple-hive .container {
-        width: 100% !important;
-      }
-    }
-    @media (min-width: 992px){
-      .purple-hive .container {
-        width: 970px;
-      }
-    }
-    @media (min-width: 1200px){
-      .purple-hive .container {
-        width: 1170px;
-      }
-    }
