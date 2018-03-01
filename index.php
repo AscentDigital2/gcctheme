@@ -79,7 +79,7 @@
         <div class="col-md-4 social-box">
           <div class="panel panel-default panel-social">
               <div class="panel-heading">Twitter</div>
-              <div class="panel-body">&nbsp;</div>
+              <div class="panel-body"><?php echo do_shortcode( '[TWTR]' ); ?></div>
           </div>
         </div>
         <div class="col-md-4 social-box">
