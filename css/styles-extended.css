@@ -1082,7 +1082,7 @@ nav.nav-menu-gcc {
     }
     @media (min-width: 768px){
       .purple-hive .container {
-        width: 100%;
+        width: 100% !important;
       }
     }
     @media (min-width: 992px){
