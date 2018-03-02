@@ -40,7 +40,7 @@
       <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <img class = "m-img" src ="<?php echo $thumb_url[0]; ?>">
+              <img class = "m-img" src ="<?php if(!empty($thumb_url[0])){ echo $thumb_url[0]; }else{ echo '//:0'; } ?>">
             </div>
             <div class="col-md-6 box-pad-events" style ="color:#FFF;">
               <h3 class="m-h3">Time <?php echo get_field('time'); ?></h3>
