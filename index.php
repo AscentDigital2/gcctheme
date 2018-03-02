@@ -74,7 +74,7 @@
           <div class="panel panel-default panel-social">
               <div class="panel-heading">Facebook</div>
               <div class="panel-body">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Name of Widgetized Area") ) : ?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Facebook Feed") ) : ?>
                 <?php endif;?>
               </div>
           </div>
