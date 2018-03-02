@@ -73,7 +73,10 @@
         <div class="col-md-4 social-box">
           <div class="panel panel-default panel-social">
               <div class="panel-heading">Facebook</div>
-              <div class="panel-body"><?php echo do_shortcode( '[WD_FB id="2"]' ); ?></div>
+              <div class="panel-body">
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Name of Widgetized Area") ) : ?>
+                <?php endif;?>
+              </div>
           </div>
         </div>
         <div class="col-md-4 social-box">

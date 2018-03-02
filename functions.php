@@ -23,6 +23,15 @@
 		add_theme_support('post-formats', array('aside', 'gallery', 'link'));
 	}
 	add_action('after_setup_theme', 'setup');
+	if ( function_exists('register_sidebar') )
+	  register_sidebar(array(
+	    'name' => 'Facebook Feed',
+	    'before_widget' => '<div class = "widgetizedArea">',
+	    'after_widget' => '</div>',
+	    'before_title' => '<h3>',
+	    'after_title' => '</h3>',
+	  )
+	);
 
 	add_action( 'init', 'sponsor_cpt' );
 
