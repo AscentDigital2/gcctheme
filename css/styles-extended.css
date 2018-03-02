@@ -1077,7 +1077,7 @@ nav.nav-menu-gcc {
     nav.nav-menu-gcc .container .right-menu{
       margin-left: 400px !important;
     }
-    /*.sponsor-img{
+    .sponsor-img{
       background-color: #FFF;
     }
       .social-container {
@@ -1094,9 +1094,9 @@ nav.nav-menu-gcc {
           margin-left: auto;
           margin-right: auto;
       }
-    }*/
+    }
     .newsletter form p {
     width: 71%;
-    /*margin-top: 50px;
-    margin-bottom: 20px;*/
+    margin-top: 50px;
+    margin-bottom: 20px;
     }
