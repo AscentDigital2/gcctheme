@@ -86,7 +86,7 @@
 	}
 	add_action( 'init', 'officer_cpt' );
 
-	function advisory_cpt() {
+	function officer_cpt() {
 
 		register_post_type( 'officer', array(
 		  'labels' => array(
