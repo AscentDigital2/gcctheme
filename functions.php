@@ -84,6 +84,23 @@
 		  'taxonomies' => array('category')
 		));
 	}
+	add_action( 'init', 'officer_cpt' );
+
+	function advisory_cpt() {
+
+		register_post_type( 'officer', array(
+		  'labels' => array(
+		    'name' => 'Officers',
+		    'singular_name' => 'Officer',
+		   ),
+		  'description' => 'Officers',
+		  'public' => true,
+		  'publicly_queryable' => true,
+		  'menu_position' => 20,
+		  'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
+		  'taxonomies' => array('category')
+		));
+	}
 	add_action( 'init', 'hotel_cpt' );
 
 	function hotel_cpt() {

@@ -1096,3 +1096,37 @@ nav.nav-menu-gcc {
           margin-right: auto;
       }
     }
+
+    .off-title{
+      margin-top: 20px;
+      margin-bottom: 20px;    
+      font-size: 48px;
+      line-height: 58px;
+      color: #DBBE73;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: raleway, sans-serif;
+      font-weight: 900;
+    }
+    .o-name{
+      font-size: 24px;
+      line-height: 29px;
+      color: #FFFFFF;
+      font-family: raleway, sans-serif;
+      font-weight: 800;
+    }
+    .o-title{
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+      font-family: raleway, sans-serif;
+      font-weight: 400;
+    }
+    .o-email{
+      font-size: 18px;
+      line-height: 22px;
+      color: #DBBE73;
+      font-family: raleway, sans-serif;
+      font-weight: 400;
+      margin-bottom: 50px;
+    }

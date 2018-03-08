@@ -41,7 +41,33 @@
       </div>
     </form>
   </section>
-
+  <div class="silver-bar to-top">
+  </div>
+  <!-- Sponsors -->
+  <section class="sponsors black-striped">
+    <h1 class="off-title">SPONSORS </h1>
+    <div class="container">
+      <div class="row">
+        <?php  
+                $args = array(
+                    'post_type' => 'officer',
+                    'order' => 'DESC',
+                    'orderby' => 'post_date'
+                );
+                $query = new WP_Query($args);
+                if($query->have_posts()){
+                  $counter = 1;
+                  while($query->have_posts()){
+        ?>
+        <div class="col-md-4 col-xs-4 advisor-box"><p class="o-name"><?php the_title(); ?></p><p class="o-title"><?php echo get_field('position'); ?></p><p class="o-email"><?php echo get_field('email'); ?></p></div>
+      <?php
+              }
+            }
+            wp_reset_query();
+      ?>
+      </div>
+    </div>
+  </section>
   <!-- Gold bar with ball -->
   <div class="gold-bar to-top">
     <img src="<?php echo get_template_directory_uri(); ?>/img/ball-u437.png" alt="" class="small-logo">

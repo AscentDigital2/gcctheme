@@ -2,8 +2,8 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <title><?php echo bloginfo('name'); ?></title>
   <meta name="description" content="Gulf Coast Challenge">
   <meta name="author" content="DB">
