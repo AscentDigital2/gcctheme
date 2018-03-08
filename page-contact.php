@@ -49,7 +49,6 @@
     <div class="container">
       <div class="row">
         <?php  
-                wp_reset_query();
                 $args = array(
                     'post_type' => 'officer',
                     'order' => 'DESC',
@@ -57,12 +56,9 @@
                 );
                 $query = new WP_Query($args);
                 if($query->have_posts()){
-                  $counter = 1;
-                  while($query->have_posts()){
         ?>
-        <div class="col-md-4 col-xs-4 advisor-box"><p class="o-name"><?php the_title(); ?></p><p class="o-title"><?php echo get_field('position'); ?></p><p class="o-email"><?php echo get_field('email'); ?></p></div>
+        <div class="col-md-4 col-xs-4 advisor-box"><p class="o-name"><?php get_the_title(); ?></p><p class="o-title"><?php echo get_field('position'); ?></p><p class="o-email"><?php echo get_field('email'); ?></p></div>
       <?php
-              }
             }
             wp_reset_query();
       ?>
