@@ -49,6 +49,7 @@
     <div class="container">
       <div class="row">
         <?php  
+                wp_reset_query();
                 $args = array(
                     'post_type' => 'officer',
                     'order' => 'DESC',
