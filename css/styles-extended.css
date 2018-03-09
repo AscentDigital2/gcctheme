@@ -1114,6 +1114,7 @@ nav.nav-menu-gcc {
       color: #FFFFFF;
       font-family: raleway, sans-serif;
       font-weight: 800;
+      text-align: center;
     }
     .o-title{
       font-size: 18px;
@@ -1121,6 +1122,7 @@ nav.nav-menu-gcc {
       color: #FFFFFF;
       font-family: raleway, sans-serif;
       font-weight: 400;
+      text-align: center;
     }
     .o-email{
       font-size: 18px;
@@ -1129,4 +1131,5 @@ nav.nav-menu-gcc {
       font-family: raleway, sans-serif;
       font-weight: 400;
       margin-bottom: 50px;
+      text-align: center;
     }
