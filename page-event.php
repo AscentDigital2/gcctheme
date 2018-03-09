@@ -47,7 +47,7 @@
               <p class="m-p"><?php echo date('F jS', strtotime(get_field('date'))); ?></p>
               <p class="place-p"><?php echo get_field('place'); ?></p>
               <?php the_content(); ?>
-              <a href = "<?php echo get_field('link'); ?>" class ="btn btn-default btn-gold">Event Link</a>
+              <a href = "<?php echo get_field('link'); ?>" target ="_blank" class ="btn btn-default btn-gold">Event Link</a>
             </div>
           </div>
       </div>
