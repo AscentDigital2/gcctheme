@@ -78,25 +78,36 @@
         <div class="col-md-4 social-box">
           <div class="panel panel-default panel-social">
               <div class="panel-heading">Facebook</div>
-              <div class="panel-body"><?php echo do_shortcode( '[WD_FB id="2"]' ); ?></div>
+              <div class="panel-body">
+                <?php if ( is_active_sidebar( 'facebook_feed' ) ) : ?>
+                  <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'facebook_feed' ); ?>
+                  </div><!-- #primary-sidebar -->
+               <?php endif; ?>
+              </div>
           </div>
         </div>
         <div class="col-md-4 social-box">
           <div class="panel panel-default panel-social">
               <div class="panel-heading">Twitter</div>
-              <div class="panel-body"><?php echo do_shortcode( '[TWTR]' ); ?></div>
+              <div class="panel-body">
+                <?php if ( is_active_sidebar( 'twitter_feed' ) ) : ?>
+                <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary" style="height:100%">
+                  <?php dynamic_sidebar( 'twitter_feed' ); ?>
+                </div><!-- #primary-sidebar -->
+                <?php endif; ?>
+              </div>
           </div>
         </div>
         <div class="col-md-4 social-box">
           <div class="panel panel-default panel-social">
               <div class="panel-heading">Instagram</div>
               <div class="panel-body">
-                <?php
-                    if(is_active_sidebar('instagram-feed'))
-                    {
-                        dynamic_sidebar('instagram-feed');
-                    }
-                ?>
+                <?php if ( is_active_sidebar( 'instagram_feed' ) ) : ?>
+                  <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'instagram_feed' ); ?>
+                  </div><!-- #primary-sidebar -->
+                <?php endif; ?>
               </div>
           </div>
         </div>
