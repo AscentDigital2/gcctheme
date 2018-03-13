@@ -50,9 +50,14 @@
 	        	while($query->have_posts()){
 	        		$query->the_post();
 	        		$thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), '', false);
-	    ?>
+              if($counter==7){
+	     ?>
+        <div class="col-md-2 col-md-offset-2 col-xs-6 col-sm-6 sponsor-box"><a href="<?php the_field('url'); ?>"><img src="<?php echo $thumb_url[0]; ?>" class ="sponsor-img" alt=""></a></div>
+        <?php }else{ ?>
         <div class="col-md-2 col-xs-6 col-sm-6 sponsor-box"><a href="<?php the_field('url'); ?>"><img src="<?php echo $thumb_url[0]; ?>" class ="sponsor-img" alt=""></a></div>
         <?php
+            }
+            $counter++;
         		}
         	}
         	wp_reset_query();
