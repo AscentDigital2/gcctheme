@@ -45,7 +45,7 @@
   </div>
   <!-- Sponsors -->
   <section class="sponsors black-striped">
-    <h1 class="off-title">OFFICERS </h1>
+    <h1 class="off-title">GCC Executive Staff</h1>
     <div class="container">
       <div class="row">
         <?php  
