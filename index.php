@@ -85,7 +85,14 @@
         <div class="col-md-4 social-box">
           <div class="panel panel-default panel-social">
               <div class="panel-heading">Instagram</div>
-              <div class="panel-body">&nbsp;</div>
+              <div class="panel-body">
+                <?php
+                    if(is_active_sidebar('instagram-feed'))
+                    {
+                        dynamic_sidebar('instagram-feed');
+                    }
+                ?>
+              </div>
           </div>
         </div>
       </div>

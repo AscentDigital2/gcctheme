@@ -25,7 +25,8 @@
 	add_action('after_setup_theme', 'setup');
 	if ( function_exists('register_sidebar') )
 	  register_sidebar(array(
-	    'name' => 'Facebook Feed',
+	    'name' => 'Instagram Feed',
+    	'id' => 'instagram-feed',
 	    'before_widget' => '<div class = "widgetizedArea">',
 	    'after_widget' => '</div>',
 	    'before_title' => '<h3>',
