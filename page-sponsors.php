@@ -20,7 +20,7 @@
                 Presenting
             </div>
             <div class="panel-body">
-              <div class="row">
+              <div class="row text-center">
                 <?php  
                   $args = array(
                       'post_type' => 'sponsors',
@@ -52,7 +52,7 @@
                 Official
             </div>
             <div class="panel-body">
-              <div class="row">
+              <div class="row text-center">
                 <?php  
                   $args = array(
                       'post_type' => 'sponsors',
@@ -84,7 +84,7 @@
                 Supporting
             </div>
             <div class="panel-body">
-              <div class="row">
+              <div class="row text-center">
                 <?php  
                   $args = array(
                       'post_type' => 'sponsors',
@@ -115,7 +115,7 @@
                 HOST
             </div>
             <div class="panel-body">
-              <div class="row">
+              <div class="row text-center">
                 <?php  
                   $args = array(
                       'post_type' => 'sponsors',

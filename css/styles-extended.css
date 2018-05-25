@@ -956,9 +956,15 @@ nav.nav-menu-gcc {
 .sponsor-box{
     margin-bottom: 15px;
     text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #ddd;
 }
 .sponsor-box a:hover{
     text-decoration: none;
