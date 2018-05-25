@@ -16,9 +16,6 @@
 
       <div class="container">
         <div class="panel panel-default panel-sponsors">
-            <div class="panel-heading text-center">
-                Presenting
-            </div>
             <div class="panel-body">
               <div class="row">
                 <?php  
