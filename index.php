@@ -34,15 +34,17 @@
 
 
   <!-- Sponsors -->
-  <section class="sponsors black-striped">
-    <h1 class="opaque">SPONSORS </h1>
+  <section class="sponsors">
+    <h1 class="sponsor-title">SPONSORS </h1>
     <div class="container">
       <div class="row">
       	<?php  
 	        $args = array(
 	            'post_type' => 'sponsors',
+              'sponsor_type' => 'presenting',
+              'posts_per_page' => -1,
 	            'order' => 'DESC',
-	            'orderby' => 'post_date'
+	            'orderby' => 'postdate'
 	        );
 	        $query = new WP_Query($args);
 	        if($query->have_posts()){
@@ -50,13 +52,9 @@
 	        	while($query->have_posts()){
 	        		$query->the_post();
 	        		$thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), '', false);
-              if($counter==7){
 	     ?>
-        <div class="col-md-2 col-md-offset-2 col-xs-6 col-sm-6 sponsor-box"><a href="<?php the_field('url'); ?>"><img src="<?php echo $thumb_url[0]; ?>" class ="sponsor-img" alt=""></a></div>
-        <?php }else{ ?>
         <div class="col-md-2 col-xs-6 col-sm-6 sponsor-box"><a href="<?php the_field('url'); ?>"><img src="<?php echo $thumb_url[0]; ?>" class ="sponsor-img" alt=""></a></div>
         <?php
-            }
             $counter++;
         		}
         	}
@@ -104,7 +102,7 @@
               <div class="panel-heading">Instagram</div>
               <div class="panel-body">
                 <?php if ( is_active_sidebar( 'instagram_feed' ) ) : ?>
-                  <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+                  <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary" style="max-height:350px;overflow:auto;">
                     <?php dynamic_sidebar( 'instagram_feed' ); ?>
                   </div><!-- #primary-sidebar -->
                 <?php endif; ?>
@@ -127,10 +125,31 @@
 
   <!-- Videos-challenge -->
   <section class="video-challenge">
-     <div class="backdrop text-center">
-        <div class="video-box">
-                <iframe class="actAsDiv" style="width:100%;height:100%;" src="<?php the_field('challenge_of_the_day'); ?>" frameborder="0" allowfullscreen=""></iframe>
-        </div>      
+     <div class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="video-box">
+                      <iframe class="actAsDiv" style="width:100%;height:100%;" src="<?php the_field('challenge_of_the_day'); ?>" frameborder="0" allowfullscreen=""></iframe>
+              </div>    
+            </div>
+            <div class="col-md-6">
+              <div class="video-box">
+                      <iframe class="actAsDiv" style="width:100%;height:100%;" src="<?php the_field('challenge_of_the_day_2'); ?>" frameborder="0" allowfullscreen=""></iframe>
+              </div>    
+            </div>
+            <div class="col-md-6">
+              <div class="video-box">
+                      <iframe class="actAsDiv" style="width:100%;height:100%;" src="<?php the_field('challenge_of_the_day_3'); ?>" frameborder="0" allowfullscreen=""></iframe>
+              </div>    
+            </div>
+            <div class="col-md-6">
+              <div class="video-box">
+                      <iframe class="actAsDiv" style="width:100%;height:100%;" src="<?php the_field('challenge_of_the_day_4'); ?>" frameborder="0" allowfullscreen=""></iframe>
+              </div>   
+            </div>
+          </div>  
+        </div>
      </div>
   </section>
 

@@ -458,6 +458,7 @@ color: #FFF;
 .advisor-box{
     padding-left: 80px;
     padding-right: 70px;
+    min-height: 310px;
 }
 
 .advisor-box img{
@@ -487,6 +488,7 @@ color: #FFF;
     text-align: center;
     font-family: raleway, sans-serif;
     font-weight: 400;
+    min-height: 50px;
 }
 .vc-text{
     font-size: 15px;
@@ -535,7 +537,7 @@ color: #FFF;
 
 @media (max-width: 768px) {
   .ticket-menu a{
-    font-size: 13px;
+    font-size: 16px;
   }    
 
 }
@@ -1076,7 +1078,7 @@ nav.nav-menu-gcc {
     }
 
     nav.nav-menu-gcc .container .right-menu{
-      margin-left: 400px !important;
+      margin-left: 390px !important;
     }
     .sponsor-img{
       background-color: #FFF;
@@ -1135,3 +1137,142 @@ nav.nav-menu-gcc {
       margin-bottom: 50px;
       text-align: center;
     }
+    .sponsor-title{
+      color: #E9D382;
+      margin-top: 30px;
+      margin-top: 30px;    
+      font-size: 80px;
+      line-height: 96px;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: raleway, sans-serif;
+      font-weight: 900;
+    }
+    .video-challenge .container{
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+
+@media (max-width: 768px) {
+    .video-challenge .container{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
+    .contact-button{
+      display: none;
+    }
+}
+.footer-t{
+    line-height: 22px;
+    color: #D6B76A;
+    font-size: 18px;
+    text-align: center;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.sponsors-section{
+  background-color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.sp-title{
+    line-height: 76px;
+    color: #FFFFFF;
+    font-size: 54px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: raleway, sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.panel-sponsors{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.panel-sponsors .panel-heading{
+    background-color: #F0E092;
+    line-height: 50px;
+    color: #502A94;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: raleway, sans-serif;
+    font-weight: 900;
+}
+
+.panel-sponsors .panel-body{
+    padding-top: 40px 80px 40px 80px;
+}
+.community-dropdown{
+    margin-left: 30px;
+    border-radius: 0;
+    z-index: 9999;
+}
+.sponsorship-dropdown{
+    margin-left: -65px;
+    border-radius: 0;
+    z-index: 9999;
+}
+.community-dropdown a{
+    text-align: left !important; 
+    color: #CEA54B !important; 
+    text-shadow:none !important; 
+}
+.sponsorship-dropdown a{
+    text-align: left !important; 
+    color: #CEA54B !important; 
+    text-shadow:none !important; 
+}
+.link-list a {
+  padding-bottom: 5px !important;
+}
+.link-list a:hover {
+  color: #CEA54B;
+  transition: .3s color; 
+}
+.volunteer-form{
+  margin-bottom: 80px;
+  display: inline-block;
+  width: 60%;
+}
+.volunteer-form .form-control{
+  margin-bottom: 20px;
+  border-radius: 0;
+  height: 49px;
+  line-height: 20px;
+  color: #7F7F7F;
+  font-size: 17px;
+  text-align: left;
+  font-family: raleway, sans-serif;
+  font-weight: 400;
+}
+.volunteer-form textarea{
+   resize:none;
+   height: 120px !important;
+}
+.volunteer-form .btn-volunteer{
+  width: 50%;
+  border-radius: 0;
+  background-color: #E2C774;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: raleway, sans-serif;
+  font-weight: 800;
+}
+.to-top {
+    z-index: 5;
+}
+section.banner .graphic-overlay.star-g {
+    z-index: 10;
+}
+.btn-group:hover > ul.dropdown-menu {
+    display: block;    
+}

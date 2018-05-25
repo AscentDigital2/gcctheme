@@ -7,16 +7,8 @@
     </div>
     <div class="purple-hive">
       <div class="container">
-        <ul class="footer-links">
-          <?php  
-            $menuLocations = get_nav_menu_locations();
-            $menuID = $menuLocations['footer'];
-            $menus = wp_get_nav_menu_items($menuID);
-            foreach ($menus as $menu) {
-          ?>  
-            <li><a href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a></li>
-          <?php } ?>
-      </ul>
+        <div class="text-center">
+        </div>
       </div>
     </div>
     <div class="silver-bar"></div>

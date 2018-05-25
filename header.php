@@ -29,6 +29,7 @@
           <a href="<?php echo get_option('gcctheme_instagram', ''); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons3.png" alt=""></a>
         </div>
         <div class="right-top-menu">
+          <a href="http://thegulfcoastchallenge.com/contact/" class ="contact-button">Contact</a>
           <a href="javascript:void(0)" class ="menu-button">MENU</a>
         </div>
       </div>
@@ -48,9 +49,23 @@
           <?php endforeach ?>
         </div>
         <div class="right-menu">
-          <?php foreach ($array2 as $menu): ?>
-            <a href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a>
-          <?php endforeach ?>
+          <div class="btn-group">
+            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+            <ul class="dropdown-menu community-dropdown">
+              <li><a href="http://thegulfcoastchallenge.com/mardi-the-mascot/">Mardi the Mascot</a></li>
+              <li><a href="http://thegulfcoastchallenge.com/volunteers/">Volunteers</a></li>
+              <li><a href="http://thegulfcoastchallenge.com/advisory-board/">Advisory Board</a></li>
+            </ul>
+          </div>
+          <a href="http://thegulfcoastchallenge.com/events/">Events</a>
+          <a href="http://thegulfcoastchallenge.com/hotels/">Hotels</a>
+          <div class="btn-group">
+            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sponsorship</a>
+            <ul class="dropdown-menu sponsorship-dropdown">
+              <li><a href="http://thegulfcoastchallenge.com/become-a-sponsor/">Become a Sponsor</a></li>
+              <li><a href="http://thegulfcoastchallenge.com/sponsors/">Sponsors</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -70,9 +85,17 @@
   </section>
   <div class="gold-bar"></div>
     <div class="link-list">
-      <?php foreach ($menus as $menu): ?>
+      <?php foreach ($array1 as $menu): ?>
         <a href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a>
       <?php endforeach ?>
+      <a href="http://thegulfcoastchallenge.com/mardi-the-mascot/">Mardi the Mascot</a>
+      <a href="http://thegulfcoastchallenge.com/volunteers/">Volunteers</a>
+      <a href="http://thegulfcoastchallenge.com/advisory-board/">Advisory Board</a>
+      <a href="http://thegulfcoastchallenge.com/events/">Events</a>
+      <a href="http://thegulfcoastchallenge.com/hotels/">Hotels</a>
+      <a href="http://thegulfcoastchallenge.com/become-a-sponsor/">Become a Sponsor</a>
+      <a href="http://thegulfcoastchallenge.com/sponsors/">Sponsors</a>
+      <a href="http://thegulfcoastchallenge.com/contact/">Contact</a>
     </div>
   </div>
   <!-- Mobile Menu -->
