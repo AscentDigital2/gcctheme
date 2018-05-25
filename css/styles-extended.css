@@ -957,6 +957,23 @@ nav.nav-menu-gcc {
     margin-bottom: 15px;
     text-align: center;
 }
+.sponsor-box a:hover{
+    text-decoration: none;
+}
+.sponsor-box:hover{
+  box-shadow: 3px 3px 23px rgba(0,0,0,0.75);
+}
+.partner-title{
+    margin-bottom: 0px;
+    margin-top: 60px;
+    line-height: 24px;
+    color: #542B9C;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+}
 .panel-social .panel-heading{
     background-color: #E9D382;    
     font-size: 18px;
