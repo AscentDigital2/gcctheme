@@ -17,7 +17,7 @@
       <div class="container">
         <div class="panel panel-default panel-sponsors">
             <div class="panel-body">
-              <div class="row">
+              <div class="row text-center">
                 <?php  
                   $args = array(
                       'post_type' => 'partners',

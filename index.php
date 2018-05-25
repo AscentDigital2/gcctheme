@@ -37,7 +37,7 @@
   <section class="sponsors">
     <h1 class="sponsor-title">SPONSORS </h1>
     <div class="container">
-      <div class="row">
+      <div class="row text-center">
       	<?php  
 	        $args = array(
 	            'post_type' => 'sponsors',
