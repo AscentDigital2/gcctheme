@@ -53,8 +53,9 @@
             <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
             <ul class="dropdown-menu community-dropdown">
               <li><a href="http://thegulfcoastchallenge.com/mardi-the-mascot/">Mardi the Mascot</a></li>
-              <li><a href="http://thegulfcoastchallenge.com/volunteers/">Volunteers</a></li>
               <li><a href="http://thegulfcoastchallenge.com/advisory-board/">Advisory Board</a></li>
+              <li><a href="http://thegulfcoastchallenge.com/pictures/">Pictures</a></li>
+              <li><a href="http://thegulfcoastchallenge.com/volunteers/">Volunteers</a></li>
             </ul>
           </div>
           <a href="http://thegulfcoastchallenge.com/events/">Events</a>
@@ -62,8 +63,9 @@
           <div class="btn-group">
             <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sponsorship</a>
             <ul class="dropdown-menu sponsorship-dropdown">
-              <li><a href="http://thegulfcoastchallenge.com/become-a-sponsor/">Become a Sponsor</a></li>
+              <li><a href="http://thegulfcoastchallenge.com/partners/">Partners</a></li>
               <li><a href="http://thegulfcoastchallenge.com/sponsors/">Sponsors</a></li>
+              <li><a href="http://thegulfcoastchallenge.com/become-a-sponsor/">Become a Sponsor</a></li>
             </ul>
           </div>
         </div>
@@ -89,12 +91,14 @@
         <a href="<?php echo $menu->url ?>"><?php echo $menu->title; ?></a>
       <?php endforeach ?>
       <a href="http://thegulfcoastchallenge.com/mardi-the-mascot/">Mardi the Mascot</a>
-      <a href="http://thegulfcoastchallenge.com/volunteers/">Volunteers</a>
       <a href="http://thegulfcoastchallenge.com/advisory-board/">Advisory Board</a>
+      <a href="http://thegulfcoastchallenge.com/pictures/">Pictures</a>
+      <a href="http://thegulfcoastchallenge.com/volunteers/">Volunteers</a>
       <a href="http://thegulfcoastchallenge.com/events/">Events</a>
       <a href="http://thegulfcoastchallenge.com/hotels/">Hotels</a>
-      <a href="http://thegulfcoastchallenge.com/become-a-sponsor/">Become a Sponsor</a>
+      <a href="http://thegulfcoastchallenge.com/partners/">Partners</a>
       <a href="http://thegulfcoastchallenge.com/sponsors/">Sponsors</a>
+      <a href="http://thegulfcoastchallenge.com/become-a-sponsor/">Become a Sponsor</a>
       <a href="http://thegulfcoastchallenge.com/contact/">Contact</a>
     </div>
   </div>
