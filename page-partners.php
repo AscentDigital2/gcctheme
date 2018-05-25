@@ -35,7 +35,7 @@
                       $query->the_post();
                       $thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), '', false);
                ?>
-                <div class="col-md-2 col-xs-6 col-sm-6 sponsor-box"><a href="<?php the_field('url'); ?>"><h2 class ="partner-title"><?php the_title(); ?></h2><img src="<?php echo $thumb_url[0]; ?>" class ="sponsor-img" alt=""></a></div>
+                <div class="col-md-3 col-xs-6 col-sm-6 sponsor-box"><a href="<?php the_field('url'); ?>"><h2 class ="partner-title"><?php the_title(); ?></h2><img src="<?php echo $thumb_url[0]; ?>" class ="sponsor-img" alt=""></a></div>
                 <?php
                     $counter++;
                     }
