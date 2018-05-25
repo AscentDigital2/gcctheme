@@ -1292,3 +1292,9 @@ section.banner .graphic-overlay.star-g {
     height: auto;
   }
 }
+.error{
+    display: inherit;
+    text-align: left !important;
+    color: #d9534f;
+    margin-top: -15px;
+}
