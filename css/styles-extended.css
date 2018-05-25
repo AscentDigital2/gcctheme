@@ -963,8 +963,6 @@ nav.nav-menu-gcc {
     /* inline-block space fix */
     margin-right:-4px;
     text-align: center;
-    background-color: #ccc;
-    border: 1px solid #ddd;
 }
 .sponsor-box a:hover{
     text-decoration: none;
