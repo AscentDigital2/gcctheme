@@ -22,8 +22,8 @@
                   $args = array(
                       'post_type' => 'partners',
                       'posts_per_page' => -1,
-                      'order' => 'DESC',
-                      'orderby' => 'post_date'
+                      'order' => 'ASC',
+                      'orderby' => 'title'
                   );
                   $query = new WP_Query($args);
                   if($query->have_posts()){
