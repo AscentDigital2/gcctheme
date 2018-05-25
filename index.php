@@ -41,7 +41,7 @@
       	<?php  
 	        $args = array(
 	            'post_type' => 'sponsors',
-              'sponsor_type' => 'presenting',
+              'sponsor_type' => 'homepage',
               'posts_per_page' => -1,
 	            'order' => 'DESC',
 	            'orderby' => 'postdate'
