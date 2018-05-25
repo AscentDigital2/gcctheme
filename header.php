@@ -29,7 +29,7 @@
           <a href="<?php echo get_option('gcctheme_instagram', ''); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/social-icons3.png" alt=""></a>
         </div>
         <div class="right-top-menu">
-          <a href="http://thegulfcoastchallenge.com/contact/" class ="contact-button">Contact</a>
+          <a href="http://thegulfcoastchallenge.com/contact/" class ="contact-button" style = "font-size:14px;">Contact</a>
           <a href="javascript:void(0)" class ="menu-button">MENU</a>
         </div>
       </div>
