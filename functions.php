@@ -6,6 +6,13 @@
 		wp_enqueue_style('extended', get_template_directory_uri() . '/css/styles-extended.css');
 		wp_enqueue_style('extended2', get_template_directory_uri() . '/css/styles-extended-2.css');
 		wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '1.0.0', true );
+		wp_enqueue_script('jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '1.0.0', true);
+		wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
+		wp_localize_script( "scripts", 'gcctheme_volunteers_vars', array(
+	            'ajaxUrl' => admin_url( 'admin-ajax.php' ), //url for php file that process ajax request to WP
+	            'nonce' => wp_create_nonce( "gcctheme_volunteers_nonce" )
+	        )
+	    );
 	}
 
 	add_action('wp_enqueue_scripts', 'resources');
@@ -248,4 +255,27 @@
 
 	add_action( 'admin_post_nopriv_gcctheme_contact_form', 'send_contact_form' );
 	add_action( 'admin_post_gcctheme_contact_form', 'send_contact_form' );
+
+	function gcctheme_volunteers_process() {
+    	$name = $_POST['name'];
+		$email = $_POST['email'];
+		$phone = $_POST['phone'];
+		$message = $_POST['message'];
+
+		$body = 'Full Name: ' . $name . "\r\n";
+		$body .= 'Email Address: ' . $email . "\r\n";
+		$body .= 'Phone: ' . $phone . "\r\n";
+		$body .= 'Message: ' . $message;
+
+		$success = 'false';
+		if(wp_mail(get_option('gcctheme_recipients', ''), 'Volunteers Form', $body)){
+			$success = 'true';
+		}
+
+		echo $success;
+	}
+	add_action("wp_ajax_gcctheme_volunteers", "gcctheme_volunteers_process");
+
+	//use this version for if you want the callback to work for users who are not logged in
+	add_action("wp_ajax_nopriv_gcctheme_volunteers", "gcctheme_volunteers_process");
 ?>

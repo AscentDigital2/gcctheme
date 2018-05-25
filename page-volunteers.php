@@ -13,12 +13,15 @@
         <div class="col-md-8 col-md-offset-2 text-center">
           <div class="volunteer-form">
           <h1>Want to Volunteer?</h1>
-          <form action = ""  method = "POST">
-            <input type = "text" placeholder = "Full Name" class = "form-control" required>
-            <input type = "email" placeholder = "Email" class = "form-control" required>
-            <input type = "phone" placeholder = "Phone" class = "form-control" >
-            <textarea placeholder = "What you want to do" class ="form-control" rows ="10"></textarea>
-            <button type = "submit" class ="btn btn-default btn-volunteer">Submit</button>
+          <form id="volunteer-form" action = ""  method = "POST">
+            <div class="alert alert-success" id="volunteer-success" style="display: none;">
+              Your submission has been sent
+            </div>
+            <input type = "text" placeholder = "Full Name" class = "form-control" name="name">
+            <input type = "email" placeholder = "Email" class = "form-control" name="email">
+            <input type = "phone" placeholder = "Phone" class = "form-control" name="phone">
+            <textarea placeholder = "What you want to do" class ="form-control" rows ="10" name="message"></textarea>
+            <button type = "submit" class ="btn btn-default btn-volunteer" id="volunteer-submit">Submit</button>
           </form>
           </div>
         </div>

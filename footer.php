@@ -26,25 +26,5 @@
     </div>
   </footer>
   <?php wp_footer(); ?>
-
-  <script>
-    (function($) {
-      $('.menu-button').on('click', function(){
-        $('.menu-container').toggleClass('open-menu');  
-
-      });
-      $('.close-navigation').on('click', function(){
-        $('.menu-container').toggleClass('open-menu'); 
-      }); 
-      $(document).mouseup(function(e) {
-        var container = $(".menu-container"); 
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
-            $('.menu-container').removeClass('open-menu'); 
-        }
-      });  
-
-      $('.carousel').carousel();
-    })( jQuery );
-  </script>
 </body>
 </html>
