@@ -5,9 +5,11 @@
 		wp_enqueue_style('main', get_template_directory_uri() . '/css/styles.css');
 		wp_enqueue_style('extended', get_template_directory_uri() . '/css/styles-extended.css');
 		wp_enqueue_style('extended2', get_template_directory_uri() . '/css/styles-extended-2.css');
+		wp_enqueue_style('lightbox', get_template_directory_uri() . '/css/lightbox.css');
 		wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '1.0.0', true );
 		wp_enqueue_script('jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '1.0.0', true);
 		wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
+		wp_enqueue_script( 'lightboxjs', get_template_directory_uri() . '/js/lightbox.js', array('jquery'), '1.0.0', true );
 		wp_localize_script( "scripts", 'gcctheme_volunteers_vars', array(
 	            'ajaxUrl' => admin_url( 'admin-ajax.php' ), //url for php file that process ajax request to WP
 	            'nonce' => wp_create_nonce( "gcctheme_volunteers_nonce" )
@@ -69,6 +71,23 @@
 		  'labels' => array(
 		    'name' => 'Sponsors',
 		    'singular_name' => 'Sponsor',
+		   ),
+		  'description' => 'Partners',
+		  'public' => true,
+		  'publicly_queryable' => true,
+		  'menu_position' => 20,
+		  'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
+		  'taxonomies' => array('category')
+		));
+	}
+	add_action( 'init', 'partner_cpt' );
+
+	function partner_cpt() {
+
+		register_post_type( 'partners', array(
+		  'labels' => array(
+		    'name' => 'Partners',
+		    'singular_name' => 'Partner',
 		   ),
 		  'description' => 'Partners',
 		  'public' => true,
