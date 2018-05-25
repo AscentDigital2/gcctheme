@@ -1096,6 +1096,8 @@ nav.nav-menu-gcc {
     }
     .sponsor-img{
       background-color: #FFF;
+      height: 140px;
+      width: 140px;
     }
       .social-container {
           width: 100%;
