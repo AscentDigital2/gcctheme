@@ -94,8 +94,8 @@
       <a href="http://thegulfcoastchallenge.com/advisory-board/">Advisory Board</a>
       <a href="http://thegulfcoastchallenge.com/pictures/">Pictures</a>
       <a href="http://thegulfcoastchallenge.com/volunteers/">Volunteers</a>
-      <a href="http://thegulfcoastchallenge.com/events/">Events</a>
-      <a href="http://thegulfcoastchallenge.com/hotels/">Hotels</a>
+      <a href="http://thegulfcoastchallenge.com/event/">Events</a>
+      <a href="http://thegulfcoastchallenge.com/hotel/">Hotels</a>
       <a href="http://thegulfcoastchallenge.com/partners/">Partners</a>
       <a href="http://thegulfcoastchallenge.com/sponsors/">Sponsors</a>
       <a href="http://thegulfcoastchallenge.com/become-a-sponsor/">Become a Sponsor</a>
