@@ -5,7 +5,7 @@
 <section class = "community-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 tradition-text">
+        <div class="col-md-12 tradition-text f-marg">
           <h1>VOLUNTEERS</h1>
           <div class="row"><div class="col-md-5 col-md-offset-4 "><div class="m-img" style="background-image: url(<?php echo get_field('volunteers_image')['url']; ?>);"></div></div></div>
           <div class="content-text"><?php the_field('volunteers_description'); ?></div>
