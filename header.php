@@ -58,8 +58,8 @@
               <li><a href="http://thegulfcoastchallenge.com/volunteers/">Volunteers</a></li>
             </ul>
           </div>
-          <a href="http://thegulfcoastchallenge.com/events/">Events</a>
-          <a href="http://thegulfcoastchallenge.com/hotels/">Hotels</a>
+          <a href="http://thegulfcoastchallenge.com/event/">Events</a>
+          <a href="http://thegulfcoastchallenge.com/hotel/">Hotels</a>
           <div class="btn-group">
             <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sponsorship</a>
             <ul class="dropdown-menu sponsorship-dropdown">
