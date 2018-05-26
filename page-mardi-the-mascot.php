@@ -7,7 +7,7 @@
       <div class="row">
         <div class="col-md-12 tradition-text">
           <h1><?php the_field('header'); ?></h1>
-          <div class="lg-img" style="background-image: url(<?php echo get_field('collage_picture')['url']; ?>);"></div>
+          <div class="lg-img mascot-img" style="background-image: url(<?php echo get_field('collage_picture')['url']; ?>);"></div>
           <?php the_content(); ?>
         </div>
       </div>

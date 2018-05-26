@@ -8,7 +8,7 @@
         <div class="col-md-12 tradition-text">
           <h1>VOLUNTEERS</h1>
           <div class="row"><div class="col-md-5 col-md-offset-4 "><div class="m-img" style="background-image: url(<?php echo get_field('volunteers_image')['url']; ?>);"></div></div></div>
-          <?php the_field('volunteers_description'); ?>
+          <div class="content-text"><?php the_field('volunteers_description'); ?></div>
         </div>
         <div class="col-md-8 col-md-offset-2 text-center">
           <div class="volunteer-form">

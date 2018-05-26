@@ -1305,6 +1305,9 @@ section.banner .graphic-overlay.star-g {
   margin-bottom: 30px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  .community-section .mascot-img{
+    .height: 194px;
+  }
   .gallery-section .image-box img{
     height: auto;
   }
@@ -1314,10 +1317,19 @@ section.banner .graphic-overlay.star-g {
   .gallery-section .image-box img{
     height: auto;
   }
+  .community-section .mascot-img{
+    .height: 93px;
+  }
 }
 .error{
     display: inherit;
     text-align: left !important;
     color: #d9534f;
     margin-top: -15px;
+}
+.f-marg{
+  margin-bottom: 20px;
+}
+.content-text{
+   margin-top: 20px;
 }
