@@ -7,7 +7,7 @@ get_header();
       </div>
       <section class="purple-hive">
         <div class="container">
-              <h2 class = "sp-title">Gallery</h2>
+              <h2 class = "sp-title">Gallery Section</h2>
         </div>
       </section>
       <div class="gold-bar to-top">

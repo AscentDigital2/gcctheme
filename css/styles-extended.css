@@ -1303,6 +1303,7 @@ section.banner .graphic-overlay.star-g {
   width: 100%;
   height: 164px;
   margin-bottom: 30px;
+  margin-top: 40px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .community-section .mascot-img{
