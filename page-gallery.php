@@ -2,6 +2,17 @@
 get_header();
  ?>
 <section class = "community-section">
+    <!--  -->
+      <div class="gold-bar to-top">
+      </div>
+      <section class="purple-hive">
+        <div class="container">
+              <h2 class = "sp-title">Gallery</h2>
+        </div>
+      </section>
+      <div class="gold-bar to-top">
+      </div>
+      <!--  -->
     <div class="container">
       <div class="row">
             <?php  

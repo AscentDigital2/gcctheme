@@ -1335,7 +1335,7 @@ section.banner .graphic-overlay.star-g {
 }
 .gallery-box {
   min-height: 300px;
-    background: #FFF;
+    background: #7F7F7F;
     box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
     margin-top: 80px;
 }
@@ -1343,7 +1343,7 @@ section.banner .graphic-overlay.star-g {
   position: relative;
   min-height: 420px;
     padding: 40px 45px 0px 40px;
-    border-bottom: 40px solid #2E8683;
+    border-bottom: 40px solid #DBBE73;
 }
 .gallery{
   position: relative;
@@ -1356,13 +1356,14 @@ section.banner .graphic-overlay.star-g {
 .gallery-title{
     line-height: 24px;
     font-size: 24px;
+    color: #FFF;
     text-align: center;
     font-family: raleway, sans-serif;
     font-weight: 800;
 }
 .gallery-date{
     line-height: 27px;
-    color: #7F7F7F;
+    color: #FFF;
     font-size: 18px;
     text-align: center;
     font-family: raleway, sans-serif;
@@ -1370,5 +1371,5 @@ section.banner .graphic-overlay.star-g {
     margin-top: 5px;
 }
 .text-box a{
-    color: #000 !important;
+    color: #FFF !important;
 }
