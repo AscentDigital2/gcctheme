@@ -2,10 +2,21 @@
 the_post();
  ?>
 <section class = "community-section">
+  
+    <!--  -->
+      <div class="gold-bar to-top">
+      </div>
+      <section class="purple-hive">
+        <div class="container">
+              <h2 class = "sp-title"><?php the_title(); ?></h2>
+        </div>
+      </section>
+      <div class="gold-bar to-top">
+      </div>
+      <!--  -->
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1><?php the_title(); ?></h1>
           <div class="row image-box">
             <?php 
               $images = get_field('gallery');
