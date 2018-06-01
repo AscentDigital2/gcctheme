@@ -142,6 +142,12 @@
     <!--  -->
 
   </section>
+  <?php }else if(is_single()){ ?>
+    <section class = "sub-banner" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/pics3.jpg);">
+      <div class="container">
+      <h3 class = "sub-banner-title"><?php echo get_the_title(); ?></h3>
+      </div>
+    </section>
   <?php 
     }else{
       $thumb_url = wp_get_attachment_image_src(get_post_thumbnail_id(), '', false);
