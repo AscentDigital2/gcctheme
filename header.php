@@ -54,7 +54,7 @@
             <ul class="dropdown-menu community-dropdown">
               <li><a href="http://thegulfcoastchallenge.com/mardi-the-mascot/">Mardi the Mascot</a></li>
               <li><a href="http://thegulfcoastchallenge.com/advisory-board/">Advisory Board</a></li>
-              <li><a href="http://thegulfcoastchallenge.com/gallery/">Gallery</a></li>
+              <li><a href="http://thegulfcoastchallenge.com/gallery/">Galleries</a></li>
               <li><a href="http://thegulfcoastchallenge.com/volunteers/">Volunteers</a></li>
             </ul>
           </div>
@@ -92,7 +92,7 @@
       <?php endforeach ?>
       <a href="http://thegulfcoastchallenge.com/mardi-the-mascot/">Mardi the Mascot</a>
       <a href="http://thegulfcoastchallenge.com/advisory-board/">Advisory Board</a>
-      <a href="http://thegulfcoastchallenge.com/gallery/">Gallery</a>
+      <a href="http://thegulfcoastchallenge.com/gallery/">Galleries</a>
       <a href="http://thegulfcoastchallenge.com/volunteers/">Volunteers</a>
       <a href="http://thegulfcoastchallenge.com/event/">Events</a>
       <a href="http://thegulfcoastchallenge.com/hotel/">Hotels</a>
