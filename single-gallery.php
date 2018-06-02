@@ -8,7 +8,7 @@ the_post();
       </div>
       <section class="purple-hive">
         <div class="container">
-              <h2 class = "sp-title"><?php the_title(); ?></h2>
+              <h2 class = "sp-title" style ="font-size:30px"><?php the_title(); ?></h2>
         </div>
       </section>
       <div class="gold-bar to-top">
